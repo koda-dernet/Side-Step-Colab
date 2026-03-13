@@ -11,15 +11,17 @@
  by dernet -- BETA
 ```
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/koda-dernet/Side-Step-Colab/blob/main/Side_Step_Colab.ipynb)
-
 Fine-tune music LoRAs with [Side-Step](https://github.com/koda-dernet/Side-Step) directly in Google Colab — no local GPU required.
 
 ---
 
-## What's Inside
+## Notebooks
 
-The notebook exposes the full Side-Step CLI pipeline in a single `.ipynb`:
+### Full Suite — `Side_Step_Colab.ipynb`
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/koda-dernet/Side-Step-Colab/blob/main/Side_Step_Colab.ipynb)
+
+The complete Side-Step pipeline: captions, audio analysis, preprocessing, PP++, training, export, and history.
 
 | Section | | Description |
 |---------|--|-------------|
@@ -35,11 +37,26 @@ The notebook exposes the full Side-Step CLI pipeline in a single `.ipynb`:
 | S9 Export | `[OPTIONAL]` | ComfyUI `.safetensors` export |
 | S10 History | `[OPTIONAL]` | View past training runs |
 
+### Training Only — `Side_Step_Train.ipynb`
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/koda-dernet/Side-Step-Colab/blob/main/Side_Step_Train.ipynb)
+
+Slim notebook for users who already have audio files with sidecars and just want to preprocess + train.
+
+| Section | Description |
+|---------|-------------|
+| S0 GPU Check | Verify GPU runtime |
+| S1 Install & Mount | Clone Side-Step, mount Drive |
+| S2 Model Downloads | Download ACE-Step checkpoints |
+| S3 Preprocessing | Audio to .pt tensors |
+| S4 PP++ Analysis | Adaptive ranks *(optional)* |
+| S5 Training | Train adapter + TensorBoard |
+
 ## Quick Start
 
-1. Click the **Open in Colab** badge above
+1. Click the **Open in Colab** badge for the notebook you want
 2. Set runtime to **GPU** (Runtime > Change runtime type > T4/A100/L4)
-3. Run cells top-to-bottom — required sections get you from raw audio to a trained adapter
+3. Run cells top-to-bottom
 
 ## Requirements
 
