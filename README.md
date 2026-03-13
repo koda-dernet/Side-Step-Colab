@@ -1,5 +1,16 @@
 # Side-Step — Google Colab Edition
 
+```
+ ░▒▓███████▓▒░▒▓█▓▒░▒▓███████▓▒░░▒▓████████▓▒░░▒▓███████▓▒░▒▓████████▓▒░▒▓████████▓▒░▒▓███████▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░
+░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░
+ ░▒▓██████▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓██████▓▒░  ░▒▓██████▓▒░   ░▒▓█▓▒░   ░▒▓██████▓▒░ ░▒▓███████▓▒░ 
+       ░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░  ░▒▓█▓▒░   ░▒▓█▓▒░      ░▒▓█▓▒░       
+       ░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░  ░▒▓█▓▒░   ░▒▓█▓▒░      ░▒▓█▓▒░       
+░▒▓███████▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓████████▓▒░▒▓███████▓▒░   ░▒▓█▓▒░   ░▒▓████████▓▒░▒▓█▓▒░       
+ by dernet -- BETA
+```
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/koda-dernet/Side-Step-Colab/blob/main/Side_Step_Colab.ipynb)
 
 Fine-tune music LoRAs with [Side-Step](https://github.com/koda-dernet/Side-Step) directly in Google Colab — no local GPU required.
@@ -37,10 +48,6 @@ The notebook exposes the full Side-Step CLI pipeline in a single `.ipynb`:
 - Audio files to train on
 
 Everything else (Side-Step, dependencies, model weights) is installed and downloaded automatically inside the notebook.
-
-## Design
-
-This notebook follows the Side-Step design language — bracket-tag status messages (`[OK]`, `[FAIL]`, `[INFO]`, `[WARN]`), Last Light palette, and toast-style HTML output cards. Every `#@param` field has a hover tooltip.
 
 ## License
 
