@@ -1,0 +1,4 @@
+# Build scripts (not needed by end users)
+gen_*.py
+__pycache__/
+*.pyc
